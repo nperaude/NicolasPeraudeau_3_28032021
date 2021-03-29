@@ -1,0 +1,11 @@
+.main {
+  background-color: $background;
+  border-radius: 25px 25px 0 0;
+  margin-top: -2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  &__heading {
+    margin-left: 5%;
+    margin-bottom: 1rem;
+  }
+}

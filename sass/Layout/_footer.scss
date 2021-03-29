@@ -1,0 +1,21 @@
+.footer {
+  background-color: $bacground-footer;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  &__heading {
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+  }
+  &__link {
+    margin-left: 5%;
+    list-style: none;
+    li {
+      margin-bottom: 0.5rem;
+    }
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

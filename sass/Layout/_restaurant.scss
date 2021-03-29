@@ -1,0 +1,11 @@
+.restaurant {
+  background-color: $background;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+
+  &__heading {
+    margin-left: 5%;
+    margin-bottom: 1rem;
+  }
+}

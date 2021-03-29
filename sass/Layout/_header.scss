@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  &__image {
+    margin-top: 0.7rem;
+    z-index: -1;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 15rem;
+    }
+  }
+  &__search {
+    width: 100%;
+    margin-top: 1rem;
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      background-color: $input;
+      text-align: center;
+    }
+  }
+  .background {
+    background-color: $background;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__sentence {
+    width: 80%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

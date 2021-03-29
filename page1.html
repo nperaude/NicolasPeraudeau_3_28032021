@@ -5,83 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La palette du goût</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/logo/ohmyfood.png" alt="logo" />
+    <header class="header">
+      <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      <div class="header__image">
+        <img
+          src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="La palette du goût"
+        />
       </div>
-      <img
-        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-        alt="La palette du goût"
-      />
     </header>
-    <main>
-      <h1>La palette du goût</h1>
-      <section>
-        <h2>entrées</h2>
-        <article>
-          <h3>Fricassée d'escargot</h3>
-          <p>Au piment d'Espelette</p>
-          <p>25€</p>
+    <main class="main">
+      <h1 class="main__heading">La palette du goût</h1>
+      <section class="categorie">
+        <h2 class="categorie__heading">entrées</h2>
+        <article class="label">
+          <h3 class="label__heading">Fricassée d'escargot</h3>
+          <div class="label__info">
+            <p class="label__info__description">Au piment d'Espelette</p>
+            <p class="label__info__price">25€</p>
+          </div>
         </article>
-        <article>
-          <h3>Foie gras de canard mi-cuit</h3>
-          <p>Et ses copeaux de truffe noire</p>
-          <p>35€</p>
+        <article class="label">
+          <h3 class="label__heading">Foie gras de canard mi-cuit</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Et ses copeaux de truffe noire
+            </p>
+            <p class="label__info__price">35€</p>
+          </div>
         </article>
-        <article>
-          <h3>Oeuf au plat</h3>
-          <p>Assaisonné à la truffe sur lit de caviar</p>
-          <p>20€</p>
-        </article>
-      </section>
-      <section>
-        <h2>plats</h2>
-        <article>
-          <h3>Filet de boeuf aux herbes</h3>
-          <p>Accompagné de sa ribambelle de légumes</p>
-          <p>40€</p>
-        </article>
-        <article>
-          <h3>Parmentier de queue de boeuf</h3>
-          <p>À la truffe noire sur sa purée de panais</p>
-          <p>35€</p>
-        </article>
-        <article>
-          <h3>Filet de turbot</h3>
-          <p>Aux agrumes</p>
-          <p>44€</p>
+        <article class="label">
+          <h3 class="label__heading">Oeuf au plat</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Assaisonné à la truffe sur lit de caviar
+            </p>
+            <p class="label__info__price">20€</p>
+          </div>
         </article>
       </section>
-      <section>
-        <h2>desserts</h2>
-        <article>
-          <h3>Paris-Brest</h3>
-          <p>Revisité</p>
-          <p>18€</p>
+      <section class="categorie">
+        <h2 class="categorie__heading">plats</h2>
+        <article class="label">
+          <h3 class="label__heading">Filet de boeuf aux herbes</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Accompagné de sa ribambelle de légumes
+            </p>
+            <p class="label__info__price">40€</p>
+          </div>
         </article>
-        <article>
-          <h3>Macaron au chocolat d'exception</h3>
-          <p>Et glace à la vanille de Madagascar</p>
-          <p>22€</p>
+        <article class="label">
+          <h3 class="label__heading">Parmentier de queue de boeuf</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              À la truffe noire sur sa purée de panais
+            </p>
+            <p class="label__info__price">35€</p>
+          </div>
         </article>
-        <article>
-          <h3>Mousse au chocolat</h3>
-          <p>Au piment d'Espelette et à la truffe noire</p>
-          <p>23€</p>
+        <article class="label">
+          <h3 class="label__heading">Filet de turbot</h3>
+          <div class="label__info">
+            <p class="label__info__description">Aux agrumes</p>
+            <p class="label__info__price">44€</p>
+          </div>
         </article>
       </section>
-      <div>
+      <section class="categorie">
+        <h2 class="categorie__heading">desserts</h2>
+        <article class="label">
+          <h3 class="label__heading">Paris-Brest</h3>
+          <div class="label__info">
+            <p class="label__info__description">Revisité</p>
+            <p class="label__info__price">18€</p>
+          </div>
+        </article>
+        <article class="label">
+          <h3 class="label__heading">Macaron au chocolat d'exception</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Et glace à la vanille de Madagascar
+            </p>
+            <p class="label__info__price">22€</p>
+          </div>
+        </article>
+        <article class="label">
+          <h3 class="label__heading">Mousse au chocolat</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Au piment d'Espelette et à la truffe noire
+            </p>
+            <p class="label__info__price">23€</p>
+          </div>
+        </article>
+      </section>
+      <div class="btn">
         <a>Commander</a>
       </div>
     </main>
-    <footer>
-      <ul>
-        <li>Proposer un restaurant</li>
-        <li>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+    <footer class="footer">
+      <h2 class="footer__heading">ohmyfood</h2>
+      <ul class="footer__link">
+        <li><a href="#">Proposer un restaurant</a></li>
+        <li><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </footer>
   </body>

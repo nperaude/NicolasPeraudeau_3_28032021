@@ -4,89 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La note enchantée</title>
+    <title>À la française</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/logo/ohmyfood.png" alt="logo" />
+    <header class="header">
+      <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      <div class="header__image">
+        <img
+          src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="À la française"
+        />
       </div>
-      <img
-        src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-        alt="La note enchantée"
-      />
     </header>
-    <main>
-      <h1>La note enchantée</h1>
-      <section>
-        <h2>entrées</h2>
-        <article>
-          <h3>Ravioles de foie gras</h3>
-          <p>Accompagnés de leur crème à la truffe</p>
-          <p>25€</p>
+    <main class="main">
+      <h1 class="main__heading">À la française</h1>
+      <section class="categorie">
+        <h2 class="categorie__heading">entrées</h2>
+        <article class="label">
+          <h3 class="label__heading">Tartare de poulpe acidulé</h3>
+          <div class="label__info">
+            <p class="label__info__description">Aux zestes d'orange</p>
+            <p class="label__info__price">25€</p>
+          </div>
         </article>
-        <article>
-          <h3>Caviar osciètre</h3>
-          <p>Sur blini à la farine de blé noir</p>
-          <p>35€</p>
+        <article class="label">
+          <h3 class="label__heading">Velouté de légumes d'antan</h3>
+          <div class="label__info">
+            <p class="label__info__description">Carotte, panais, topinambour</p>
+            <p class="label__info__price">35€</p>
+          </div>
         </article>
-        <article>
-          <h3>Homard et espuma de potiron</h3>
-          <p>Mariné aux zestes d'orange</p>
-          <p>20€</p>
-        </article>
-        <article>
-          <h3>Foie gras de canard cuit entier</h3>
-          <p>Confiture de figue et pain toasté</p>
-          <p>35€</p>
-        </article>
-      </section>
-      <section>
-        <h2>plats</h2>
-        <article>
-          <h3>Noix de coquilles Saint-Jacques</h3>
-          <p>Sur lit de purée de céleri-rave</p>
-          <p>40€</p>
-        </article>
-        <article>
-          <h3>Langoustine poêlée</h3>
-          <p>Purée de patate douce</p>
-          <p>35€</p>
-        </article>
-        <article>
-          <h3>Mijoté de queue de boeuf</h3>
-          <p>Et riz sauvage aux zestes de citron</p>
-          <p>44€</p>
+        <article class="label">
+          <h3 class="label__heading">Soupe à l'oignon</h3>
+          <div class="label__info">
+            <p class="label__info__description">Revisitée</p>
+            <p class="label__info__price">20€</p>
+          </div>
         </article>
       </section>
-      <section>
-        <h2>desserts</h2>
-        <article>
-          <h3>Macaron noisette et chocolat</h3>
-          <p>Glace au caramel brun et sel de Guérande</p>
-          <p>18€</p>
+      <section class="categorie">
+        <h2 class="categorie__heading">plats</h2>
+        <article class="label">
+          <h3 class="label__heading">Coquilles Saint-Jacques</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Accompagnées d'une purée de panais
+            </p>
+            <p class="label__info__price">40€</p>
+          </div>
         </article>
-        <article>
-          <h3>Baba au rhum revisité</h3>
-          <p>Avec son coulis de citron</p>
-          <p>22€</p>
+        <article class="label">
+          <h3 class="label__heading">Magret de canard</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Et parmentier de pommes de terre
+            </p>
+            <p class="label__info__price">35€</p>
+          </div>
         </article>
-        <article>
-          <h3>Tarte au citron meringuée</h3>
-          <p>Déstructurée</p>
-          <p>23€</p>
+        <article class="label">
+          <h3 class="label__heading">Pigeonneau d’Ille-et-Vilaine</h3>
+          <div class="label__info">
+            <p class="label__info__description">
+              Sur son lit de gnocchis aux légumes
+            </p>
+            <p class="label__info__price">44€</p>
+          </div>
         </article>
       </section>
-      <div>
+      <section class="categorie">
+        <h2 class="categorie__heading">desserts</h2>
+        <article class="label">
+          <h3 class="label__heading">Pétales de violettes glacés</h3>
+          <div class="label__info">
+            <p class="label__info__description">Et purée de noisettes</p>
+            <p class="label__info__price">18€</p>
+          </div>
+        </article>
+        <article class="label">
+          <h3 class="label__heading">Fondant au chocolat</h3>
+          <div class="label__info">
+            <p class="label__info__description">Revisité</p>
+            <p class="label__info__price">22€</p>
+          </div>
+        </article>
+        <article class="label">
+          <h3 class="label__heading">Millefeuille croustillant</h3>
+          <div class="label__info">
+            <p class="label__info__description">Myrtilles et pâte d’amande</p>
+            <p class="label__info__price">23€</p>
+          </div>
+        </article>
+      </section>
+      <div class="btn">
         <a>Commander</a>
       </div>
     </main>
-    <footer>
-      <ul>
-        <li>Proposer un restaurant</li>
-        <li>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+    <footer class="footer">
+      <h2 class="footer__heading">ohmyfood</h2>
+      <ul class="footer__link">
+        <li><a href="#">Proposer un restaurant</a></li>
+        <li><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </footer>
   </body>

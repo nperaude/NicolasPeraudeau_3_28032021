@@ -1,0 +1,14 @@
+.btn {
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  margin-top: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 0.9rem;
+  background: linear-gradient(-10deg, $colour-primary, $colour-secondary);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 27px;
+  box-shadow: 1px 1px 1rem rgb(200 200 200);
+}

@@ -1,0 +1,30 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 1rem rgb(200 200 200);
+  width: 90%;
+  border-radius: 15px;
+  &__heading {
+    margin-left: 5%;
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 0.2rem;
+    &__description {
+      display: block;
+      width: 90%;
+    }
+    &__price {
+      display: block;
+      width: 10%;
+    }
+  }
+}
