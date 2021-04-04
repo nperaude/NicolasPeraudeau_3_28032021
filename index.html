@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/409672b252.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -25,13 +34,21 @@
       <section class="instruction">
         <h2 class="instruction__heading">Fonctionnement</h2>
         <div class="instruction__sentence">
-          <p>Choisissez un restaurant</p>
+          <p class="numero">1</p>
+          <i class="fas fa-mobile-alt instruction__sentence__icon"></i>
+          <p class="phrase">Choisissez un restaurant</p>
         </div>
         <div class="instruction__sentence">
-          <p>Composez votre menu</p>
+          <p class="numero">2</p>
+          <i class="fas fa-list-ul instruction__sentence__icon"></i>
+          <p class="phrase">Composez votre menu</p>
         </div>
-        <div class="instruction__sentence">
-          <p>Dégustez aurestaurant</p>
+        <div class="instruction__sentence instruction__sentence-color">
+          <p class="numero">3</p>
+          <i
+            class="fas fa-store instruction__sentence__icon instruction__sentence__icon-color"
+          ></i>
+          <p class="phrase">Dégustez aurestaurant</p>
         </div>
       </section>
       <section class="restaurant">
@@ -44,8 +61,15 @@
                 alt="La palette du goût"
               />
             </div>
-            <h3 class="card__heading">La palette du goût</h3>
-            <p class="card__sentence">Ménilmontant</p>
+            <div class="card__container">
+              <div class="card__container__text">
+                <h3 class="card__container__text__heading">
+                  La palette du goût
+                </h3>
+                <p class="card__container__text__sentence">Ménilmontant</p>
+              </div>
+              <i class="far fa-heart card__container__icon"></i>
+            </div>
           </article>
         </a>
         <a href="page2.html" class="card">
@@ -56,8 +80,15 @@
                 alt="La palette du goût"
               />
             </div>
-            <h3 class="card__heading">La note enchantée</h3>
-            <p class="card__sentence">Charonne</p>
+            <div class="card__container">
+              <div class="card__container__text">
+                <h3 class="card__container__text__heading">
+                  La note enchantée
+                </h3>
+                <p class="card__container__text__sentence">Charonne</p>
+              </div>
+              <i class="far fa-heart card__container__icon"></i>
+            </div>
           </article>
         </a>
         <a href="page3.html" class="card">
@@ -68,8 +99,13 @@
                 alt="La palette du goût"
               />
             </div>
-            <h3 class="card__heading">À la française</h3>
-            <p class="card__sentence">Cité Rouge</p>
+            <div class="card__container">
+              <div class="card__container__text">
+                <h3 class="card__container__text__heading">À la française</h3>
+                <p class="card__container__text__sentence">Cité Rouge</p>
+              </div>
+              <i class="far fa-heart card__container__icon"></i>
+            </div>
           </article>
         </a>
         <a href="page4.html" class="card">
@@ -80,8 +116,15 @@
                 alt="La palette du goût"
               />
             </div>
-            <h3 class="card__heading">Le délice des sens</h3>
-            <p class="card__sentence">Folie-Méricourt</p>
+            <div class="card__container">
+              <div class="card__container__text">
+                <h3 class="card__container__text__heading">
+                  Le délice des sens
+                </h3>
+                <p class="card__container__text__sentence">Folie-Méricourt</p>
+              </div>
+              <i class="far fa-heart card__container__icon"></i>
+            </div>
           </article>
         </a>
       </section>
@@ -89,8 +132,12 @@
     <footer class="footer">
       <h2 class="footer__heading">ohmyfood</h2>
       <ul class="footer__link">
-        <li><a href="#">Proposer un restaurant</a></li>
-        <li><a href="#">Devenir partenaire</a></li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="#">Contact</a></li>
       </ul>

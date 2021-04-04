@@ -20,13 +20,29 @@
       height: 12rem;
     }
   }
-  &__heading {
-    margin-left: 5%;
-    margin-bottom: 0.2rem;
-    margin-top: 0.5rem;
-  }
-  &__sentence {
-    margin-left: 5%;
-    margin-bottom: 0.2rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+      width: 80%;
+      &__heading {
+        display: block;
+        margin-left: 5%;
+        margin-bottom: 0.2rem;
+        margin-top: 0.5rem;
+        width: 90%;
+      }
+      &__sentence {
+        display: block;
+        margin-left: 5%;
+        margin-bottom: 0.2rem;
+        width: 90%;
+      }
+    }
+    &__icon {
+      margin-right: 5%;
+      font-size: 1.3rem;
+    }
   }
 }

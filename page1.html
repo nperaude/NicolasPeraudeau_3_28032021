@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La palette du goût</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/409672b252.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      <div class="header__nav">
+        <a class="header__nav__icon" href="index.html"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <img
+          src="images/logo/ohmyfood.png"
+          alt="logo"
+          class="header__nav__logo"
+        />
+      </div>
       <div class="header__image">
         <img
           src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -110,8 +128,12 @@
     <footer class="footer">
       <h2 class="footer__heading">ohmyfood</h2>
       <ul class="footer__link">
-        <li><a href="#">Proposer un restaurant</a></li>
-        <li><a href="#">Devenir partenaire</a></li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
