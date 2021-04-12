@@ -10,6 +10,12 @@
   &__link {
     margin-left: 5%;
     list-style: none;
+    @include Desktop-only {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+    }
     li {
       margin-bottom: 0.5rem;
     }

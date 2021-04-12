@@ -4,3 +4,12 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+body {
+  @include Desktop-only {
+    height: auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

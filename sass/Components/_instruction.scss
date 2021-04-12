@@ -16,6 +16,12 @@
     box-shadow: 1px 1px 1rem rgb(200 200 200);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    @include Desktop-only {
+      width: 30%;
+    }
+    @include tablette-only {
+      width: 70%;
+    }
     &-color {
       background-color: rgba($color: $colour-primary, $alpha: 0.2);
     }

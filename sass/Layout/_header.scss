@@ -21,7 +21,11 @@
   &__logo {
     width: 50%;
     margin-top: 1rem;
+    @include Desktop-only {
+      width: 20%;
+    }
   }
+
   &__image {
     margin-top: 0.7rem;
     z-index: -1;

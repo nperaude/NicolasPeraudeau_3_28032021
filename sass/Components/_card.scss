@@ -11,6 +11,13 @@
   box-shadow: 1px 1px 1rem rgb(200 200 200);
   text-decoration: none;
   color: black;
+  @include Desktop-only {
+    width: 23%;
+  }
+  @include tablette-only {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
 
   &__image {
     img {
@@ -44,5 +51,18 @@
       margin-right: 5%;
       font-size: 1.3rem;
     }
+  }
+}
+
+.organisation-card {
+  display: flex;
+  flex-direction: column;
+  @include Desktop-only {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @include tablette-only {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

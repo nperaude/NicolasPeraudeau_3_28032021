@@ -11,4 +11,10 @@
   text-align: center;
   border-radius: 27px;
   box-shadow: 1px 1px 1rem rgb(200 200 200);
+  @include Desktop-only {
+    width: 20%;
+  }
+  @include tablette-only {
+    width: 30%;
+  }
 }

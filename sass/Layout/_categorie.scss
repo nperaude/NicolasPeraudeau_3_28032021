@@ -7,5 +7,22 @@
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
     border-bottom: solid 3px $colour-tertiary;
+    @include Desktop-only {
+      width: 5%;
+    }
+    @include tablette-only {
+      width: 6%;
+    }
+  }
+  @include Desktop-only {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablette-only {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
