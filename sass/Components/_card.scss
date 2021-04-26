@@ -12,7 +12,8 @@
   text-decoration: none;
   color: black;
   @include Desktop-only {
-    width: 23%;
+    width: 35%;
+    margin-bottom: 3rem;
   }
   @include tablette-only {
     width: 40%;
@@ -50,16 +51,27 @@
     &__icon {
       margin-right: 5%;
       font-size: 1.3rem;
+      &-2 {
+        color: #ff79da;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
     }
   }
 }
-
+.truc {
+  position: relative;
+  margin-right: 5%;
+}
 .organisation-card {
   display: flex;
   flex-direction: column;
   @include Desktop-only {
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
   @include tablette-only {
     flex-direction: row;

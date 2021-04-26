@@ -9,3 +9,37 @@
     margin-bottom: 1rem;
   }
 }
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heart {
+  position: relative;
+  margin-right: 5%;
+  &__icon {
+    margin-right: 5%;
+    font-size: 1.3rem;
+    &-2 {
+      color: $colour-secondary;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(0);
+    }
+  }
+
+  &:hover {
+    .heart__icon-2 {
+      animation: heart 0.3s;
+      animation-fill-mode: forwards;
+    }
+    .heart__icon {
+      transform: scale(0);
+    }
+  }
+}

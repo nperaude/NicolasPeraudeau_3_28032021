@@ -17,6 +17,9 @@
     ></script>
   </head>
   <body>
+    <div class="back">
+      <div class="loader"></div>
+    </div>
     <header class="header">
       <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
       <div class="header__search">
@@ -33,22 +36,24 @@
     <main>
       <section class="instruction">
         <h2 class="instruction__heading">Fonctionnement</h2>
-        <div class="instruction__sentence">
-          <p class="numero">1</p>
-          <i class="fas fa-mobile-alt instruction__sentence__icon"></i>
-          <p class="phrase">Choisissez un restaurant</p>
-        </div>
-        <div class="instruction__sentence">
-          <p class="numero">2</p>
-          <i class="fas fa-list-ul instruction__sentence__icon"></i>
-          <p class="phrase">Composez votre menu</p>
-        </div>
-        <div class="instruction__sentence instruction__sentence-color">
-          <p class="numero">3</p>
-          <i
-            class="fas fa-store instruction__sentence__icon instruction__sentence__icon-color"
-          ></i>
-          <p class="phrase">Dégustez aurestaurant</p>
+        <div class="desktop">
+          <div class="instruction__sentence">
+            <p class="numero">1</p>
+            <i class="fas fa-mobile-alt instruction__sentence__icon"></i>
+            <p class="phrase">Choisissez un restaurant</p>
+          </div>
+          <div class="instruction__sentence">
+            <p class="numero">2</p>
+            <i class="fas fa-list-ul instruction__sentence__icon"></i>
+            <p class="phrase">Composez votre menu</p>
+          </div>
+          <div class="instruction__sentence instruction__sentence-color">
+            <p class="numero">3</p>
+            <i
+              class="fas fa-store instruction__sentence__icon instruction__sentence__icon-color"
+            ></i>
+            <p class="phrase">Dégustez au restaurant</p>
+          </div>
         </div>
       </section>
       <section class="restaurant">
@@ -69,7 +74,10 @@
                   </h3>
                   <p class="card__container__text__sentence">Ménilmontant</p>
                 </div>
-                <i class="far fa-heart card__container__icon"></i>
+                <div class="heart">
+                  <i class="far fa-heart heart__icon"></i>
+                  <i class="fas fa-heart heart__icon-2"></i>
+                </div>
               </div>
             </article>
           </a>

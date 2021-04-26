@@ -1,0 +1,112 @@
+.loader {
+  animation: spin 1s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: $colour-primary;
+  border-top-color: $colour-primary;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+  &:before {
+    animation: spin 2s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $colour-secondary;
+    border-top-color: $colour-secondary;
+    box-sizing: border-box;
+    content: "";
+    height: 16vmin;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16vmin;
+  }
+  &:after {
+    animation: spin 3s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $colour-tertiary;
+    border-top-color: $colour-tertiary;
+    box-sizing: border-box;
+    content: "";
+    height: 12vmin;
+    left: 2vmin;
+    position: absolute;
+    top: 2vmin;
+    width: 12vmin;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.back {
+  animation: spinloader 3s;
+  animation-fill-mode: both;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #666565, $alpha: 0.7);
+  z-index: 999;
+}
+
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@for $i from 1 through 15 {
+  .fade-#{$i} {
+    animation: fadeIn 0.4s * $i;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.label:hover .label__check {
+  animation: validation ease 0.4s;
+  animation-fill-mode: forwards;
+  display: flex;
+}
+
+@keyframes validation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

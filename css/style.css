@@ -14,6 +14,10 @@
   }
 }
 
+html {
+  margin: 0;
+}
+
 .btn {
   padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   margin-top: 2rem;
@@ -33,7 +37,7 @@
     width: 20%;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1349px) {
   .btn {
     width: 30%;
   }
@@ -59,12 +63,7 @@
 }
 @media screen and (min-width: 1350px) {
   .instruction__sentence {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 750px) {
-  .instruction__sentence {
-    width: 70%;
+    margin-right: 5%;
   }
 }
 .instruction__sentence-color {
@@ -91,6 +90,15 @@
   width: 60%;
 }
 
+@media screen and (min-width: 1350px) {
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -107,10 +115,11 @@
 }
 @media screen and (min-width: 1350px) {
   .card {
-    width: 23%;
+    width: 35%;
+    margin-bottom: 3rem;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1349px) {
   .card {
     width: 40%;
     margin-bottom: 2rem;
@@ -147,6 +156,19 @@
   margin-right: 5%;
   font-size: 1.3rem;
 }
+.card__container__icon-2 {
+  color: #ff79da;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.truc {
+  position: relative;
+  margin-right: 5%;
+}
 
 .organisation-card {
   display: flex;
@@ -155,10 +177,10 @@
 @media screen and (min-width: 1350px) {
   .organisation-card {
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1349px) {
   .organisation-card {
     flex-direction: row;
     flex-wrap: wrap;
@@ -167,40 +189,67 @@
 
 .label {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   width: 95%;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
   background-color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   box-shadow: 1px 1px 1rem #c8c8c8;
   border-radius: 15px;
 }
-.label__heading {
+.label__text {
+  width: 65%;
   margin-left: 5%;
+  margin-right: 2%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-.label__info {
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-top: 0.2rem;
-}
-.label__info__description {
-  display: block;
-  width: 85%;
-  margin-right: 5%;
+.label__text__heading {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.label__info__price {
-  display: block;
-  width: 10%;
-  margin-right: 1.5rem;
+.label__text__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.label__info {
+  margin-right: 5%;
+  font-weight: bold;
+  margin-top: 2.3rem;
+}
+.label__check {
+  display: none;
+  width: 15%;
+  height: auto;
+  border-radius: 0 15px 15px 0;
+  background-color: #99e2d0;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+}
+.label__check i {
+  color: white;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 1350px) {
+  .label {
+    margin-right: 3%;
+    width: 30%;
+  }
 }
 
+@media screen and (min-width: 1350px) {
+  .label-desktop {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -328,6 +377,37 @@
   margin-bottom: 1rem;
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heart {
+  position: relative;
+  margin-right: 5%;
+}
+.heart__icon {
+  margin-right: 5%;
+  font-size: 1.3rem;
+}
+.heart__icon-2 {
+  color: #ff79da;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+}
+.heart:hover .heart__icon-2 {
+  animation: heart 0.3s;
+  animation-fill-mode: forwards;
+}
+.heart:hover .heart__icon {
+  transform: scale(0);
+}
+
 .categorie {
   margin-bottom: 3rem;
 }
@@ -344,23 +424,183 @@
     width: 5%;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1349px) {
   .categorie__heading {
     width: 6%;
   }
 }
 @media screen and (min-width: 1350px) {
   .categorie {
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1349px) {
   .categorie {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.loader {
+  animation: spin 1s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #9356dc;
+  border-top-color: #9356dc;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+}
+.loader:before {
+  animation: spin 2s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #ff79da;
+  border-top-color: #ff79da;
+  box-sizing: border-box;
+  content: "";
+  height: 16vmin;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16vmin;
+}
+.loader:after {
+  animation: spin 3s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #99e2d0;
+  border-top-color: #99e2d0;
+  box-sizing: border-box;
+  content: "";
+  height: 12vmin;
+  left: 2vmin;
+  position: absolute;
+  top: 2vmin;
+  width: 12vmin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.back {
+  animation: spinloader 3s;
+  animation-fill-mode: both;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(102, 101, 101, 0.7);
+  z-index: 999;
+}
+
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.fade-1 {
+  animation: fadeIn 0.4s;
+}
+
+.fade-2 {
+  animation: fadeIn 0.8s;
+}
+
+.fade-3 {
+  animation: fadeIn 1.2s;
+}
+
+.fade-4 {
+  animation: fadeIn 1.6s;
+}
+
+.fade-5 {
+  animation: fadeIn 2s;
+}
+
+.fade-6 {
+  animation: fadeIn 2.4s;
+}
+
+.fade-7 {
+  animation: fadeIn 2.8s;
+}
+
+.fade-8 {
+  animation: fadeIn 3.2s;
+}
+
+.fade-9 {
+  animation: fadeIn 3.6s;
+}
+
+.fade-10 {
+  animation: fadeIn 4s;
+}
+
+.fade-11 {
+  animation: fadeIn 4.4s;
+}
+
+.fade-12 {
+  animation: fadeIn 4.8s;
+}
+
+.fade-13 {
+  animation: fadeIn 5.2s;
+}
+
+.fade-14 {
+  animation: fadeIn 5.6s;
+}
+
+.fade-15 {
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.label:hover .label__check {
+  animation: validation ease 0.4s;
+  animation-fill-mode: forwards;
+  display: flex;
+}
+
+@keyframes validation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
