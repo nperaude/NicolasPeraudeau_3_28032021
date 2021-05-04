@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La note enchantée</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/409672b252.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      <div class="header__nav">
+        <a class="header__nav__icon" href="index.html"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <img
+          src="images/logo/ohmyfood.png"
+          alt="logo"
+          class="header__nav__logo"
+        />
+      </div>
       <div class="header__image">
         <img
           src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
@@ -18,97 +36,163 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="main__heading">La note enchantée</h1>
+      <div class="title">
+        <h1 class="main__heading">La note enchantée</h1>
+        <div class="heart">
+          <i class="far fa-heart heart__icon"></i>
+          <i class="fas fa-heart heart__icon-2"></i>
+        </div>
+      </div>
       <section class="categorie">
         <h2 class="categorie__heading">entrées</h2>
-        <article class="label">
-          <h3 class="label__heading">Ravioles de foie gras</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Accompagnés de leur crème à la truffe
-            </p>
-            <p class="label__info__price">25€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Caviar osciètre</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Sur blini à la farine de blé noir
-            </p>
-            <p class="label__info__price">35€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Homard et espuma de potiron</h3>
-          <div class="label__info">
-            <p class="label__info__description">Mariné aux zestes d'orange</p>
-            <p class="label__info__price">20€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Foie gras de canard cuit entier</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Confiture de figue et pain toasté
-            </p>
-            <p class="label__info__price">35€</p>
-          </div>
-        </article>
+        <div class="label-desktop">
+          <article class="label fade-1">
+            <div class="label__text">
+              <h3 class="label__text__heading">Ravioles de foie gras</h3>
+              <p class="label__text__description">
+                Accompagnés de leur crème à la truffe
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">25€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-2">
+            <div class="label__text">
+              <h3 class="label__text__heading">Caviar osciètre</h3>
+              <p class="label__text__description">
+                Sur blini à la farine de blé noir
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">35€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-3">
+            <div class="label__text">
+              <h3 class="label__text__heading">Homard et espuma de potiron</h3>
+              <p class="label__text__description">Mariné aux zestes d'orange</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">20€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-4">
+            <div class="label__text">
+              <h3 class="label__text__heading">
+                Foie gras de canard cuit entier
+              </h3>
+              <p class="label__text__description">
+                Confiture de figue et pain toasté
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">35€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="categorie">
         <h2 class="categorie__heading">plats</h2>
-        <article class="label">
-          <h3 class="label__heading">Noix de coquilles Saint-Jacques</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Sur lit de purée de céleri-rave
-            </p>
-            <p class="label__info__price">40€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Langoustine poêlée</h3>
-          <div class="label__info">
-            <p class="label__info__description">Purée de patate douce</p>
-            <p class="label__info__price">35€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Mijoté de queue de boeuf</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Et riz sauvage aux zestes de citron
-            </p>
-            <p class="label__info__price">44€</p>
-          </div>
-        </article>
+        <div class="label-desktop">
+          <article class="label fade-5">
+            <div class="label__text">
+              <h3 class="label__text__heading">
+                Noix de coquilles Saint-Jacques
+              </h3>
+              <p class="label__text__description">
+                Sur lit de purée de céleri-rave
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">40€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-6">
+            <div class="label__text">
+              <h3 class="label__text__heading">Langoustine poêlée</h3>
+              <p class="label__text__description">Purée de patate douce</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">35€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-7">
+            <div class="label__text">
+              <h3 class="label__text__heading">Mijoté de queue de boeuf</h3>
+              <p class="label__text__description">
+                Et riz sauvage aux zestes de citron
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">44€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="categorie">
-        <h2 class="categorie__heading">desserts</h2>
-        <article class="label">
-          <h3 class="label__heading">Macaron noisette et chocolat</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Glace au caramel brun et sel de Guérande
-            </p>
-            <p class="label__info__price">18€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Baba au rhum revisité</h3>
-          <div class="label__info">
-            <p class="label__info__description">Avec son coulis de citron</p>
-            <p class="label__info__price">22€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Tarte au citron meringuée</h3>
-          <div class="label__info">
-            <p class="label__info__description">Déstructurée</p>
-            <p class="label__info__price">23€</p>
-          </div>
-        </article>
+        <h2 class="categorie__heading">Desserts</h2>
+        <div class="label-desktop">
+          <article class="label fade-8">
+            <div class="label__text">
+              <h3 class="label__text__heading">Macaron noisette et chocolat</h3>
+              <p class="label__text__description">
+                Glace au caramel brun et sel de Guérande
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">18€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-9">
+            <div class="label__text">
+              <h3 class="label__text__heading">Baba au rhum revisité</h3>
+              <p class="label__text__description">Avec son coulis de citron</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">22€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-10">
+            <div class="label__text">
+              <h3 class="label__text__heading">Tarte au citron meringuée</h3>
+              <p class="label__text__description">Déstructurée</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">23€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <div class="btn">
         <a>Commander</a>

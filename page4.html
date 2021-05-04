@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le délice des sens</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/409672b252.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      <div class="header__nav">
+        <a class="header__nav__icon" href="index.html"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
+        <img
+          src="images/logo/ohmyfood.png"
+          alt="logo"
+          class="header__nav__logo"
+        />
+      </div>
       <div class="header__image">
         <img
           src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -18,80 +36,141 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="main__heading">Le délice des sens</h1>
+      <div class="title">
+        <h1 class="main__heading">Le délice des sens</h1>
+        <div class="heart">
+          <i class="far fa-heart heart__icon"></i>
+          <i class="fas fa-heart heart__icon-2"></i>
+        </div>
+      </div>
       <section class="categorie">
         <h2 class="categorie__heading">entrées</h2>
-        <article class="label">
-          <h3 class="label__heading">Tartare de thon</h3>
-          <div class="label__info">
-            <p class="label__info__description">Assaisonné au yuzu</p>
-            <p class="label__info__price">25€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Bouchée de homard croustillant</h3>
-          <div class="label__info">
-            <p class="label__info__description">
-              Et sa farandole de petits légumes
-            </p>
-            <p class="label__info__price">35€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Velouté de cèpes</h3>
-          <div class="label__info">
-            <p class="label__info__description">Aux truffes</p>
-            <p class="label__info__price">20€</p>
-          </div>
-        </article>
+        <div class="label-desktop">
+          <article class="label fade-1">
+            <div class="label__text">
+              <h3 class="label__text__heading">Tartare de thon</h3>
+              <p class="label__text__description">Assaisonné au yuzu</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">25€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-2">
+            <div class="label__text">
+              <h3 class="label__text__heading">
+                Bouchée de homard croustillant
+              </h3>
+              <p class="label__text__description">
+                Et sa farandole de petits légumes
+              </p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">35€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-3">
+            <div class="label__text">
+              <h3 class="label__text__heading">Velouté de cèpes</h3>
+              <p class="label__text__description">Aux truffes</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">20€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="categorie">
         <h2 class="categorie__heading">plats</h2>
-        <article class="label">
-          <h3 class="label__heading">Poulet rôti aux herbes de Provence</h3>
-          <div class="label__info">
-            <p class="label__info__description">Et sa crème de truffe</p>
-            <p class="label__info__price">40€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Langouste rôtie</h3>
-          <div class="label__info">
-            <p class="label__info__description">Et ses légumes de saison</p>
-            <p class="label__info__price">35€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Côte de boeuf Angus</h3>
-          <div class="label__info">
-            <p class="label__info__description">Et sa purée de panais</p>
-            <p class="label__info__price">44€</p>
-          </div>
-        </article>
+        <div class="label-desktop">
+          <article class="label fade-4">
+            <div class="label__text">
+              <h3 class="label__text__heading">
+                Poulet rôti aux herbes de Provence
+              </h3>
+              <p class="label__text__description">Et sa crème de truffe</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">40€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-5">
+            <div class="label__text">
+              <h3 class="label__text__heading">Langouste rôtie</h3>
+              <p class="label__text__description">Et ses légumes de saison</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">35€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-6">
+            <div class="label__text">
+              <h3 class="label__text__heading">Côte de boeuf Angus</h3>
+              <p class="label__text__description">Et sa purée de panais</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">44€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="categorie">
-        <h2 class="categorie__heading">desserts</h2>
-        <article class="label">
-          <h3 class="label__heading">Farandole de desserts</h3>
-          <div class="label__info">
-            <p class="label__info__description">Du chef</p>
-            <p class="label__info__price">18€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Crème brulée</h3>
-          <div class="label__info">
-            <p class="label__info__description">Revisitée</p>
-            <p class="label__info__price">22€</p>
-          </div>
-        </article>
-        <article class="label">
-          <h3 class="label__heading">Tiramisu</h3>
-          <div class="label__info">
-            <p class="label__info__description">À la noisette</p>
-            <p class="label__info__price">23€</p>
-          </div>
-        </article>
+        <h2 class="categorie__heading">Desserts</h2>
+        <div class="label-desktop">
+          <article class="label fade-7">
+            <div class="label__text">
+              <h3 class="label__text__heading">Farandole de desserts</h3>
+              <p class="label__text__description">Du chef</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">18€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-8">
+            <div class="label__text">
+              <h3 class="label__text__heading">Crème brulée</h3>
+              <p class="label__text__description">Revisitée</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">22€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+          <article class="label fade-9">
+            <div class="label__text">
+              <h3 class="label__text__heading">Tiramisu</h3>
+              <p class="label__text__description">À la noisette</p>
+            </div>
+            <div class="label__info">
+              <p class="label__info__price">23€</p>
+            </div>
+            <div class="label__check">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </article>
+        </div>
       </section>
       <div class="btn">
         <a>Commander</a>
