@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   body {
     height: auto;
     width: 75%;
@@ -32,12 +32,12 @@ html {
   border-radius: 27px;
   box-shadow: 1px 1px 1rem #c8c8c8;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .btn {
     width: 20%;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1349px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .btn {
     width: 30%;
   }
@@ -61,7 +61,7 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .instruction__sentence {
     margin-right: 5%;
   }
@@ -90,7 +90,7 @@ html {
   width: 60%;
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .desktop {
     display: flex;
     flex-direction: row;
@@ -113,13 +113,13 @@ html {
   text-decoration: none;
   color: black;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .card {
     width: 35%;
     margin-bottom: 3rem;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1349px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .card {
     width: 40%;
     margin-bottom: 2rem;
@@ -174,13 +174,13 @@ html {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .organisation-card {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1349px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .organisation-card {
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,18 +236,19 @@ html {
   color: white;
   font-size: 1.4rem;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .label {
     margin-right: 3%;
     width: 30%;
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .label-desktop {
     display: flex;
     flex-direction: row;
     margin-left: 5%;
+    flex-wrap: wrap;
   }
 }
 .header {
@@ -275,7 +276,7 @@ html {
   width: 50%;
   margin-top: 1rem;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .header__logo {
     width: 20%;
   }
@@ -283,11 +284,17 @@ html {
 .header__image {
   margin-top: 0.7rem;
   z-index: -1;
+  width: 100%;
 }
 .header__image img {
   object-fit: cover;
   width: 100%;
-  height: 15rem;
+  height: 100%;
+}
+@media screen and (min-width: 1001px) {
+  .header__image {
+    height: 35rem;
+  }
 }
 .header__search {
   width: 100%;
@@ -334,7 +341,7 @@ html {
   margin-left: 5%;
   list-style: none;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .footer__link {
     display: flex;
     flex-direction: row;
@@ -419,24 +426,24 @@ html {
   padding-bottom: 0.3rem;
   border-bottom: solid 3px #99e2d0;
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .categorie__heading {
     width: 5%;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1349px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .categorie__heading {
     width: 6%;
   }
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1001px) {
   .categorie {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1349px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .categorie {
     width: 70%;
     margin-left: auto;
