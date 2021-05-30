@@ -17,4 +17,11 @@
   @include tablette-only {
     width: 30%;
   }
+  &:hover {
+    background: linear-gradient(
+      -10deg,
+      lighten($colour-primary, 10%),
+      lighten($colour-secondary, 10%)
+    );
+  }
 }

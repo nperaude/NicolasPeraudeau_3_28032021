@@ -42,6 +42,9 @@ html {
     width: 30%;
   }
 }
+.btn:hover {
+  background: linear-gradient(-10deg, #ae80e5, #fface8);
+}
 
 .instruction__heading {
   margin-left: 5%;
@@ -71,6 +74,7 @@ html {
 }
 .instruction__sentence .numero {
   background-color: #9356dc;
+  height: 1.4rem;
   padding: 0.1rem 0.4rem 0.1rem 0.4rem;
   border-radius: 50%;
   color: white;
