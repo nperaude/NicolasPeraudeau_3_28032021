@@ -84,20 +84,91 @@
     transform: scale(1);
   }
 }
-
+.label:hover {
+  cursor: pointer;
+}
 .label:hover .label__check {
-  animation: validation ease 0.4s;
+  animation: validation ease 0.3s;
   animation-fill-mode: forwards;
   display: flex;
+}
+
+.label:hover .label__info {
+  animation: price ease 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.label:hover .checkbox {
+  animation: checkbox ease 0.5s 1;
 }
 
 @keyframes validation {
   0% {
     transform: scaleX(0);
   }
-
+  20% {
+    transform: scaleX(0.2);
+  }
+  40% {
+    transform: scaleX(0.4);
+  }
+  60% {
+    transform: scaleX(0.6);
+  }
+  80% {
+    transform: scaleX(0.8);
+  }
   100% {
     transform: scaleX(1);
+  }
+}
+
+@keyframes price {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  20% {
+    transform: translate(30px, 0);
+  }
+
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(72deg);
+  }
+
+  40% {
+    transform: rotate(144deg);
+  }
+
+  60% {
+    transform: rotate(216deg);
+  }
+
+  80% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

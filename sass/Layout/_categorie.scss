@@ -2,16 +2,16 @@
   margin-bottom: 3rem;
   &__heading {
     display: block;
-    width: 12%;
+    width: 40px;
     margin-left: 5%;
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
     border-bottom: solid 3px $colour-tertiary;
     @include Desktop-only {
-      width: 5%;
+      width: 40px;
     }
     @include tablette-only {
-      width: 6%;
+      width: 40px;
     }
   }
   @include Desktop-only {

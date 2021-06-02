@@ -69,7 +69,7 @@ html {
     margin-right: 5%;
   }
 }
-.instruction__sentence-color {
+.instruction__sentence:hover {
   background-color: rgba(147, 86, 220, 0.2);
 }
 .instruction__sentence .numero {
@@ -225,6 +225,7 @@ html {
   margin-right: 5%;
   font-weight: bold;
   margin-top: 2.3rem;
+  transform-origin: right;
 }
 .label__check {
   display: none;
@@ -395,6 +396,10 @@ html {
   align-items: center;
 }
 
+rect {
+  fill: url(#MyGradient);
+}
+
 .heart {
   position: relative;
   margin-right: 5%;
@@ -404,7 +409,7 @@ html {
   font-size: 1.3rem;
 }
 .heart__icon-2 {
-  color: #ff79da;
+  fill: url(#MyGradient);
   font-size: 1.3rem;
   position: absolute;
   top: 0;
@@ -424,7 +429,7 @@ html {
 }
 .categorie__heading {
   display: block;
-  width: 12%;
+  width: 40px;
   margin-left: 5%;
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;
@@ -432,12 +437,12 @@ html {
 }
 @media screen and (min-width: 1001px) {
   .categorie__heading {
-    width: 5%;
+    width: 40px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .categorie__heading {
-    width: 6%;
+    width: 40px;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -592,18 +597,83 @@ html {
     transform: scale(1);
   }
 }
+.label:hover {
+  cursor: pointer;
+}
+
 .label:hover .label__check {
-  animation: validation ease 0.4s;
+  animation: validation ease 0.3s;
   animation-fill-mode: forwards;
   display: flex;
+}
+
+.label:hover .label__info {
+  animation: price ease 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.label:hover .checkbox {
+  animation: checkbox ease 0.5s 1;
 }
 
 @keyframes validation {
   0% {
     transform: scaleX(0);
   }
+  20% {
+    transform: scaleX(0.2);
+  }
+  40% {
+    transform: scaleX(0.4);
+  }
+  60% {
+    transform: scaleX(0.6);
+  }
+  80% {
+    transform: scaleX(0.8);
+  }
   100% {
     transform: scaleX(1);
+  }
+}
+@keyframes price {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes heart {

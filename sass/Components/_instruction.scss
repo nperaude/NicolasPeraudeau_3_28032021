@@ -19,7 +19,7 @@
     @include Desktop-only {
       margin-right: 5%;
     }
-    &-color {
+    &:hover {
       background-color: rgba($color: $colour-primary, $alpha: 0.2);
     }
     .numero {
